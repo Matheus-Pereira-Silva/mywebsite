@@ -16,13 +16,13 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### 🔧 Instalação
 - Clone o repositório:
-git clone git clone https://github.com/Levi-21545/API_Cinema.git
+git clone git clone https://github.com/Levi-21545/API_Cinema.git . 
 cd API_Cinema
 
 - Instale as dependências do projeto:
 npm install
 
-- Copie o arquivo .env.example para .env e configure suas variáveis de ambiente:
+- Copie o arquivo `.env.example` para `.env` e configure suas variáveis de ambiente:
 cp .env.example .env
 
 - Execute as migrações do banco de dados:
@@ -35,13 +35,6 @@ npm run dev
 
 Para rodar os testes automatizados do sistema, utilize o comando abaixo:
 npx vitest run
-
-### 🔩 Analise os testes de ponta a ponta
-Esses testes verificam o fluxo completo da aplicação, garantindo que todos os componentes funcionem corretamente juntos.
-
-bash
-Copiar código
-npx vitest run --e2e
 
 ## 📦 Implantação
 
