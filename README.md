@@ -5,40 +5,59 @@ Uma API para gerenciamento de sessões de cinema, incluindo funcionalidades para
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+### 🗂️ Estrutura de pastas
+- `index.js`: Arquivo principal da aplicação.
+- `routes/`: Contém as definições de rotas.
+- `controllers/`: Contém os controladores que lidam com a lógica de negócios.
+- `services/`: Serviços que encapsulam a lógica de negócios e interagem com os repositórios.
+- `entities/`: Definições das entidades do TypeORM que representam as tabelas do banco de dados.
+- `repositories/`: Gerenciam a interação direta com o banco de dados utilizando as entidades.
+- `migrations/`: Scripts para atualizar o esquema do banco de dados de forma controlada.
+- `tests/`: Testes automatizados para garantir a qualidade e a confiabilidade do código.
 
 ### 📋 Pré-requisitos
 
 - Node.js (versão 14 ou superior)
-- npm (versão 6 ou superior)
+- npm
 - SQLite (para banco de dados)
 
 ### 🔧 Instalação
-- Clone o repositório:
-git clone git clone https://github.com/Levi-21545/API_Cinema.git . 
-cd API_Cinema
+1. Clone o repositório:
+  ```bash
+  git clone git clone https://github.com/Levi-21545/API_Cinema.git
+  ```
 
-- Instale as dependências do projeto:
-npm install
+  ```bash
+  cd API_Cinema
+  ```
 
-- Copie o arquivo `.env.example` para `.env` e configure suas variáveis de ambiente:
+2. Instale as dependências do projeto:
+  ```
+  bash
+  npm install
+  ```
+
+3. Copie o arquivo `.env.example` para `.env` e configure suas variáveis de ambiente:
+```bash
 cp .env.example .env
+```
 
-- Execute as migrações do banco de dados:
+4. Execute as migrações do banco de dados:
+```bash
 npm run typeorm migration:run
+```
 
-- Inicie o servidor:
+5. Inicie o servidor:
+```bash
 npm run dev
+```
 
 ## ⚙️ Executando os testes
 
 Para rodar os testes automatizados do sistema, utilize o comando abaixo:
+```bash
 npx vitest run
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+```
 
 ## 🛠️ Construído com
 
@@ -51,10 +70,6 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 - Prettier - Formatador de código
 - Vitest - Framework de testes
 
-## 📌 Versão
-
-Nós usamos o GitHub para controle de versão.
-
 ## ✒️ Autores
 # Equipe: Node Ninjas
 Este time é composto por: <br>
@@ -64,6 +79,5 @@ Este time é composto por: <br>
 [Guilherme](https://github.com/guilhermeswarowksi) <br>
 [Felipe](https://github.com/FelipeDetoni) <br>
 
-## 📄 Licença
 
 
