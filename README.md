@@ -10,25 +10,25 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### 📋 Pré-requisitos
 
--Node.js (versão 14 ou superior)
--npm (versão 6 ou superior)
--SQLite (para banco de dados)
+- Node.js (versão 14 ou superior)
+- npm (versão 6 ou superior)
+- SQLite (para banco de dados)
 
 ### 🔧 Instalação
--Clone o repositório:
+- Clone o repositório:
 git clone git clone https://github.com/Levi-21545/API_Cinema.git
 cd API_Cinema
 
--Instale as dependências do projeto:
+- Instale as dependências do projeto:
 npm install
 
--Copie o arquivo .env.example para .env e configure suas variáveis de ambiente:
+- Copie o arquivo .env.example para .env e configure suas variáveis de ambiente:
 cp .env.example .env
 
--Execute as migrações do banco de dados:
+- Execute as migrações do banco de dados:
 npm run typeorm migration:run
 
--Inicie o servidor:
+- Inicie o servidor:
 npm run dev
 
 ## ⚙️ Executando os testes
@@ -49,14 +49,14 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
--Node.js - Ambiente de execução JavaScript
--TypeScript - Superconjunto de JavaScript que adiciona tipagem estática
--TypeORM - ORM para TypeScript e JavaScript
--SQLite - Banco de dados SQL leve
--Swagger - Ferramenta para documentação de APIs
--ESLint - Linter para identificar e corrigir problemas no código
--Prettier - Formatador de código
--Vitest - Framework de testes
+- Node.js - Ambiente de execução JavaScript
+- TypeScript - Superconjunto de JavaScript que adiciona tipagem estática
+- TypeORM - ORM para TypeScript e JavaScript
+- SQLite - Banco de dados SQL leve
+- Swagger - Ferramenta para documentação de APIs
+- ESLint - Linter para identificar e corrigir problemas no código
+- Prettier - Formatador de código
+- Vitest - Framework de testes
 
 ## 📌 Versão
 
